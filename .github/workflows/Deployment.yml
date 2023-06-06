@@ -11,9 +11,9 @@ jobs:
         with:
           node-version: 18
       - name: Install Dependencies
-        runs: npm run ci
+        run: npm run ci
       - name: Lint Code
-        runs: npm run lint
+        run: npm run lint
   test:
     runs-on: ubuntu-latest
     steps:
@@ -24,9 +24,9 @@ jobs:
         with:
           node-version: 18
       - name: Install Dependencies
-        runs: npm run ci
+        run: npm run ci
       - name: Test Code
-        runs: npm run test
+        run: npm run test
   deploy:
     runs-on: ubuntu-latest
     steps:
@@ -37,8 +37,8 @@ jobs:
         with:
           node-version: 18
       - name: Install Dependencies
-        runs: npm run ci
+        run: npm run ci
       - name: Build Code
-        runs: npm run build
+        run: npm run build
       - name: Deploy Code
-        runs: echo "Deploying..."
+        run: echo "Deploying..."
